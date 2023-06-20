@@ -11,6 +11,12 @@
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/WebGL Builds.json", {onProgress: UnityProgress});
     </script>
+    <style>
+       .txtinfo{
+        padding-top:calc(100vh * (80/1080));position:relative;width:25%;position:absolute;height:auto;
+        background-color:rgba(0,0,0,0.8);color:white;right:0%;top:0;padding:2%
+      }
+    </style>
   </head>
   <body>
     <div class="webgl-content">
@@ -20,6 +26,11 @@
         <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
         <div class="title">3DGameBasic05</div>
       </div>
+    </div>
+    <div class="txtinfo">
+      <p> a:좌측이동,d:우측이동,w:전방이동,s:후방이동, spacebar:점프, 왼쪽마우스:킥, 우측마우스:검공격
+      </p>
+     
     </div>
   </body>
 </html>
